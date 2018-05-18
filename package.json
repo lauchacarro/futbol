@@ -1,6 +1,6 @@
 {
   "name": "futbol",
-  "version": "3.17.0",
+  "version": "3.17.1",
   "description": "🏆 Generador de los sitios estáticos para mostrar las estadísticas del fútbol de la comunidad desde una Google Spreadsheet.",
   "scripts": {
     "generate-manifest": "REACT_APP_VERSION=${npm_package_version} env-cmd .env node scripts/generate-manifest",
@@ -68,6 +68,20 @@
   },
   "contributors": [
     {
+      "name": "Cristhian Duran",
+      "url": "https://github.com/durancristhian",
+      "contributions": 219,
+      "additions": 49341,
+      "deletions": 30959
+    },
+    {
+      "name": "Esteban",
+      "url": "https://github.com/teban3010",
+      "contributions": 2,
+      "additions": 16,
+      "deletions": 36
+    },
+    {
       "name": "Hernan Rajchert",
       "url": "https://github.com/hrajchert",
       "contributions": 1,
@@ -76,20 +90,11 @@
       "hireable": true
     },
     {
-      "name": "Cristhian Duran",
-      "url": "https://github.com/durancristhian",
-      "contributions": 152,
-      "additions": 45669,
-      "deletions": 27402,
-      "hireable": null
-    },
-    {
       "name": "Mateo Silguero",
       "url": "https://github.com/mateosilguero",
       "contributions": 1,
       "additions": 21,
-      "deletions": 1,
-      "hireable": null
+      "deletions": 1
     }
   ]
 }
