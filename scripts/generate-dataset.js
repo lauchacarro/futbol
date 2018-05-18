@@ -33,16 +33,12 @@ async function generateDataset() {
   const dataArrays = await Promise.all(dataPromises);
   // hacemos un `flatten` del array para obtener todos las filas de todas las worksheets (fechas)
   // en una sola colección
-<<<<<<< HEAD
-  const data = [].concat(...dataArrays).filter((jugador) => jugador['Jugador/a'] != null && jugador['Jugador/a'] != '');
-=======
   const data = []
     .concat(...dataArrays)
     // y filtramos posibles filas vacías
     .filter(
       (jugador) => jugador.Nombre !== undefined && jugador.Nombre !== null && jugador.Nombre !== ''
     );
->>>>>>> durancristhian/master
 
   // Lista SIN REPETICIONES de nombre de jugadores (en mayúscula para comparar alfabéticamente)
   const nombresJugadores = Array.from(new Set(data.map((jugador) => jugador.Nombre.toUpperCase())));
@@ -55,11 +51,7 @@ async function generateDataset() {
     data.reduce(
       (prev, curr) => {
         // si el jugador actual que estamos iterando es el mismo de la fila de resultados
-<<<<<<< HEAD
-        if (curr['Jugador/a'].toUpperCase().trim() === nombre.toUpperCase().trim()) {
-=======
         if (curr.Nombre === nombre) {
->>>>>>> durancristhian/master
           // agregamos los resultados a su objeto
           prev.Ganados += parseInt(curr.Ganados, 10);
           prev.Empatados += parseInt(curr.Empatados, 10);
